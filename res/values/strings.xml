@@ -83,20 +83,20 @@
     <string name="notification_message">CandyKat ROM update available</string>
     
     <!-- SlimOTA About -->
-   <string name="about_home_url"><a href="http://www.slimroms.net">www.slimroms.net</a></string>
-    <string name="about_slim_ota">SlimCenter allows you to easily manage\n your ROM!</string>
-    <string name="about_copyright">\u00A9 Copyright Slimroms 2013</string>
-    <string name="about_version">SlimCenter 1.1</string>
-    <string name="about_contact"><a href="http://otaslim.slimroms.net/contact.htm">Contact us</a></string>
+   <string name="about_home_url"><a href="http://www.the-candy-shop.co">www.the-candy-shop.co</a></string>
+    <string name="about_slim_ota">CandyCenter allows you to easily manage\n your ROM!</string>
+    <string name="about_copyright">\u00A9 Copyright CandyRoms 2014</string>
+    <string name="about_version">CandyCenter 1.0</string>
+    <string name="about_contact"><a href="https://plus.google.com/communities/108100228397827258211">Contact us</a></string>
     <string name="about_contact_text">Tell us what you think\nor let us know about a bug or problem</string>
     <string name="about_license">Open source licenses</string>
-    <string name="about_license_text">SlimCenter app:</string>
+    <string name="about_license_text">CandyCenter app:</string>
     <string name="about_license_url"><a href="http://otaslim.slimroms.net/license.htm">gpl(2)</a></string>
-    <string name="menu_slimsizer">SlimSizer</string>
+    <string name="menu_slimsizer">AppRemover</string>
 
     <!-- SlimSizer  -->
     <string name="listsystem">list</string>
-    <string name="sizer_title">SlimSizer</string>
+    <string name="sizer_title">Appremover</string>
     <string name="caution">Caution!</string>
     <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.</string>
     <string name="cancel">Cancel</string>
