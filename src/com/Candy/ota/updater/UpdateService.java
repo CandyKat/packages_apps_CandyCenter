@@ -31,7 +31,7 @@ public class UpdateService extends WakefulIntentService {
     }
 
     public UpdateService() {
-        super("SlimOtaService");
+        super("CandyOtaService");
     }
 
     /* (non-Javadoc)
