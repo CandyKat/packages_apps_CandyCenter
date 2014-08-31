@@ -153,12 +153,12 @@ public class CandyOTA extends Fragment implements OnSharedPreferenceChangeListen
             String strLine;
             while ((strLine = br.readLine()) != null) {
                 String[] line = strLine.split("=");
-                if (line[0].equalsIgnoreCase("ro.candykat.device")) {
+                if (line[0].equalsIgnoreCase("ro.candyroms.device")) {
                     mStrCodename = line[1];
+                } else if (line[0].equalsIgnoreCase("ro.candyroms.model")) {
+                    mStrDevice = line[1];
                 } else if (line[0].equalsIgnoreCase("candykat.ota.version")) {
                     mStrCurVer = line[1];
-                } else if (line[0].equalsIgnoreCase("ro.candykat.model")) {
-                    mStrDevice = line[1];
                 } else if (line[0].equalsIgnoreCase("ro.modversion")) {
                     mStrCurFile = line[1];
                 }

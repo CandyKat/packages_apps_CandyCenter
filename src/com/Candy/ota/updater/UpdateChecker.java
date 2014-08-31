@@ -30,7 +30,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 import android.webkit.URLUtil;
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -45,6 +44,7 @@ import android.net.NetworkInfo;
 
 import com.Candy.center.CandyCenter;
 import com.candykat.ota.R;
+
 
 public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     private static final String TAG = "UpdateChecker";
@@ -105,9 +105,9 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
             String strLine;
             while ((strLine = br.readLine()) != null) {
                 String[] line = strLine.split("=");
-                if (line[0].equalsIgnoreCase("ro.candy.device")) {
+                if (line[0].equalsIgnoreCase("ro.candyroms.device")) {
                     strDevice = line[1].trim();
-                } else if (line[0].equalsIgnoreCase("candy.ota.version")) {
+                } else if (line[0].equalsIgnoreCase("ro.candykat.version")) {
                     slimCurVer = line[1].trim();
                 }
             }
@@ -121,7 +121,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     protected String doInBackground(Context... arg) {
         mContext = arg[0];
         Message msg;
-        if (mContext != null && mContext.toString().contains("SlimCenter")) {
+        if (mContext != null && mContext.toString().contains("CandyCenter")) {
             msg = mHandler.obtainMessage(MSG_CREATE_DIALOG);
             mHandler.sendMessage(msg);
         }
@@ -212,7 +212,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
         if (mNoLog == false) Log.d("\r\n"+TAG, "result= "+result+"\n context="+mContext.toString()+"\r\n");
-        if (mContext != null && mContext.toString().contains("SlimCenter")) {
+        if (mContext != null && mContext.toString().contains("CandyCenter")) {
             Message msg = mHandler.obtainMessage(MSG_CLOSE_DIALOG);
             mHandler.sendMessage(msg);
         } else if (result == null) {
@@ -246,7 +246,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     }
 
     private void showInvalidLink() {
-        if (mContext != null && mContext.toString().contains("SlimCenter")) {
+        if (mContext != null && mContext.toString().contains("CandyCenter")) {
             Message msg = mHandler.obtainMessage(MSG_DISPLAY_MESSAGE, mContext.getString(R.string.bad_url));
             mHandler.sendMessage(msg);
         } else {

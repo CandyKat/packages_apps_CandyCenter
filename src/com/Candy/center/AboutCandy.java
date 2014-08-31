@@ -81,7 +81,7 @@ public class AboutCandy extends Fragment{
             } else if (v == source) {
                 launchUrl("https://github.com/CandyKat");
             } else if (v == donate) {
-                launchUrl("http://www.slimroms.net/index.php/donations");
+                launchUrl("https://s.basketbuild.com/uploads/devs/Flashalot/OTA/donate_ckcenter.html");
             } else if (v == report) {
                 bugreport();
             }
