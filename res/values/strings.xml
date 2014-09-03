@@ -124,7 +124,7 @@
     <string name="slim_donate_summary">Donate to Team Candy</string>
     <string name="slim_source_title">Candy Source</string>
     <string name="slim_source_summary">CandyRoms are fully open source.\nSource at github.com/CandyKat</string>
-    <string name="center_summary"><b>CandyCenter</b> provides tools &amp; information to help make your experience with CandyRoms even better. Upgrade automatically to the newest version of our ROM with <b>CandyOTA</b> and remove unwanted system apps with <b>SlimSizer</b>.</string>
+    <string name="center_summary"><b>CandyCenter</b> provides tools &amp; information to help make your experience with CandyRoms even better. Upgrade automatically to the newest version of our ROM with <b>CandyOTA</b> and remove unwanted system apps with <b>Appremover</b>.</string>
     <string name="slim_bugreport">Bugreport</string>
     <string name="slim_bugreport_summary">Create a complete Bugreport.</string>
     <string name="report_infosuccess">Created Systemreport, provide it to The Team by attaching it to your Bugreport! You can find the Zip file on your SD-Card in a directory called \"CandyKat\".</string>
